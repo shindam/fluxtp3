@@ -4,9 +4,4 @@ resources:
   - flux-system-source.yaml
   - gotk-components.yaml
   - gotk-sync.yaml
-  - ../hellogo/deployment.yaml
-  - ../hellogo/service.yaml
-  - ../hellogo/kustomization.yaml
-  - ../nextcloud/configmap.yaml
-  - ../nextcloud/helmrelease.yaml
 
