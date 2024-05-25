@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nextcloud-values
+  namespace: nextcloud
+data:
+  values.yaml: |
+    redis:
+      enabled: true
+      master:
+        persistence:
+          enabled: false
+      replica:
+        persistence:
+          enabled: false
+
+    externalDatabase:
+      enabled: false
+    internalDatabase:
+      enabled: true
+      name: nextcloud
+
+    nextcloud:
+      username: admin
+      password: password
+

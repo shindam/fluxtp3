@@ -1,0 +1,24 @@
+nextcloud:
+  username: admin
+  password: password
+  existingSecret:
+    enabled: true
+    secretName: nextcloud
+    usernameKey: nextcloud-username
+    passwordKey: nextcloud-password
+
+redis:
+  enabled: true
+  master:
+    persistence:
+      enabled: false
+  replica:
+    persistence:
+      enabled: false
+
+externalDatabase:
+  enabled: false
+internalDatabase:
+  enabled: true
+  name: nextcloud
+
